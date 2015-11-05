@@ -14,4 +14,4 @@ public interface PortfolioService extends Serializable{
 	public Portfolio gePortfolioById(long pfId) throws SystemException;
 
 	public List<Portfolio> getPortfolioByUser(User user) throws SystemException;
-}
+}  
