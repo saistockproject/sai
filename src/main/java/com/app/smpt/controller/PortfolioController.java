@@ -11,11 +11,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.app.smpt.model.Portfolio;
-
+  
 @Controller
 public class PortfolioController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	@RequestMapping(value="/portfolio", method = RequestMethod.GET)
+	public ModelAndView getPortfolioConsole(Model model){
+		ModelAndView mav = new ModelAndView("portfolio");
+		System.out.println("In portfolio console page");
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return mav;
+	}
 	
 	@RequestMapping(value="/addPortfolio", method = RequestMethod.POST)
 	public ModelAndView addPortfolio(@ModelAttribute Portfolio portfolio,  Model model, BindingResult result)

@@ -70,6 +70,7 @@
 		$('.column').equalHeight();
 	});
 </script>
+
 </head>
 <body>
 	<header id="header">
@@ -77,7 +78,7 @@
 			<h1 class="site_title">
 				<a href="index.html">Stock Admin</a>
 			</h1>
-			<h2 class="section_title">Stock Market Prediction System</h2>
+			<h2 class="section_title">SAI Project</h2>
 			<div class="btn_view_site">
 				<a href="#">View Site</a>
 			</div>
